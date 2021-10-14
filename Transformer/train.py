@@ -189,7 +189,7 @@ def accuracy(y_true, y_pred):
 model.compile(optimizer=optimizer, loss=loss_function, metrics=[accuracy])
 
 
-EPOCHS = 50
+EPOCHS = 20
 #model.load_weights("C:/Users/gio/Downloads/trans/Save/weight_")
 
 if __name__=="__main__":
