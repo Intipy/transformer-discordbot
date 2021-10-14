@@ -13,7 +13,8 @@ import time
 
 
 
-model.load_weights('C:/Users/gio/Downloads/trans/Save/weight_')
+#model.load_weights('C:/Users/gio/Downloads/trans/Save/weight_')
+model.load_weights('C:/Users/gio/Downloads/trans/Save_2/gall_weight')
 
 
 
@@ -114,7 +115,6 @@ async def on_message(message):
             
             
         elif message.content.startswith(")ck"):
-            #675635343952838658
             if message.author.guild_permissions.manage_messages:
                 try:
                     splited_keyword = message.content.split(" ")[1]
@@ -163,10 +163,13 @@ async def on_message(message):
         else:
             uMsg = message.content[1:]
             res = predict(uMsg)
-            await message.channel.send(res)
+            if res == "":
+                await message.channel.send('.')
+            else:
+                await message.channel.send(res)
 
             
 
 
-client.run("NzkwODQ2MTM1MzIxMjMxMzgx.X-Gi2w.MxfU9m8caRA6rV4EHgrfyIe8Kzo")
+client.run("NzkwODQ2MTM1MzIxMjMxMzgx.X-Gi2w.MJNBmJU5YQ2io6U2ReEjjrBa1po")
 
