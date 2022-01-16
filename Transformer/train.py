@@ -134,7 +134,7 @@ print(answers[0])
 # tf.data.Dataset을 사용하여 데이터를 배치 단위로 불러 오기
 # 텐서플로우 dataset을 이용하여 셔플(shuffle)을 수행하되, 배치 크기로 데이터를 묶는다.
 # 또한 이 과정에서 교사 강요(teacher forcing)을 사용하기 위해서 디코더의 입력과 실제값 시퀀스를 구성한다.
-BATCH_SIZE = 32
+BATCH_SIZE = 64
 BUFFER_SIZE = 20000
 
 # 디코더의 실제값 시퀀스에서는 시작 토큰을 제거해야 한다.
