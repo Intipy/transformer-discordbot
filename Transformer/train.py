@@ -26,8 +26,7 @@ small_transformer = transformer.transformer(
 
 
 
-#train_data = pd.read_csv('C:/Users/gio/Downloads/trans/Data/ko_10000.csv')
-train_data = pd.read_csv('C:/Users/gio/Downloads/trans/Data/gall.csv')
+train_data = pd.read_csv('C:/Data/ko_10000.csv')
 train_data.head()
 print('챗봇 샘플의 개수 :', len(train_data))
 
