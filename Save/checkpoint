@@ -1,0 +1,2 @@
+model_checkpoint_path: "ko_10000_50_weight"
+all_model_checkpoint_paths: "ko_10000_50_weight"
