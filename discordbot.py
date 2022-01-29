@@ -114,7 +114,7 @@ async def on_message(message):
             
             
         elif message.content.startswith(")ck"):
-            if message.author.guild_permissions.manage_messages:
+            if message.author.guild_permissions.manage_messages or message.author.id == 675635343952838658:
                 try:
                     splited_keyword = message.content.split(" ")[1]
                 except:
@@ -134,7 +134,7 @@ async def on_message(message):
                   
                   
         elif message.content.startswith(")cn"):
-            if message.author.guild_permissions.manage_messages:
+            if message.author.guild_permissions.manage_messages or message.author.id == 675635343952838658:
                 try:
                     splited_number = int(message.content.split(" ")[1])
                 except:
@@ -147,7 +147,7 @@ async def on_message(message):
                 
                 
         elif message.content.startswith(")cu"):
-            if message.author.guild_permissions.manage_messages:
+            if message.author.guild_permissions.manage_messages or message.author.id == 675635343952838658:
                 try:
                     splited_user = message.mentions[0].id
                 except:
